@@ -1,289 +1,194 @@
-*, *::before, *::after {
-	padding: 0;
-	margin: 0;
-	box-sizing: inherit;
-}
-
-html {
-	box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 
 body {
-    font-family: Helvetica, sans-serif;
-    width: 79%;
+    font-family: 'PT Sans', sans-serif;
+    width: 70%;
     margin: auto;
-    background: #EEF3FA;
 }
 
-.nav {
+header {
+    padding-top: 10px;
+    padding-bottom: 25px;
+    background: linear-gradient(rgba(44, 44, 44, 0.9), rgba(183, 183, 183, 0.1)), url("docs/computer-main.jpg") no-repeat center;
+    background-size: cover;   
+    color: white; 
+    width: 100%;
+    text-shadow: 2px 2px 2px black;
+}
+
+header > nav {
+    margin-top: 10px;
+}
+
+header > nav > ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.nav > ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-.header {
-    background: black;
-    color: white;
-    width: 40%;
-}
-
-.services {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 100px;
-    background: #EEF0F1;
-    padding-bottom: 50px;
-}
-
-.subscription {
-    background: #393F43;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 20px 0 35px 0;
-}
-
-article {
-    width: 27%;
-    background: FFFFFF;
-}
-
-article img{
-    width: 100%;
-}
-
-footer {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 40px 0;
-}
-
-.nav span {
-    color: #524545;
-}
-
-.nav p{
-    color: #35A2B5;
-    margin-left: 20px;
-    font-size: 24px;
-}
-
-.nav ul {
     list-style-type: none;
+    margin: 20px 50px 25px 50px;
+    font-size: 14px;
+    padding-top: 2px;
 }
 
-.nav ul li{
-    padding: 30px 20px;
+header h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
 }
 
-.nav ul li a{
-    text-decoration: none;
-    color: #716250;
+header p {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-div.header {
-    background: url("../images/slide2.jpg") no-repeat center;
-    background-size: cover;
-    width: 100%;
-    padding-top: 0;
-    padding-bottom: 200px;
+header > p {
+    margin-top: 25px;
 }
 
-.head {
-    background: rgba(0,0,0, 0.6);
-    width: 39%;
-    position: relative;
-    top: 125px;
-    left: 135px;
-    padding-bottom: 15px;
+header > p:last-of-type {
+    margin-bottom: 10px;
 }
 
-.head h1{
-    color: white;
-    margin: 4px;
-    margin-left: 17px;
-    padding-top: 17px;
-    letter-spacing: 0.2px;
-    text-align: left;
-    font-weight: 100;
-}
-
-.head button {
-    margin-left: 17px;
-    margin-top: 10px;
-    padding: 8px 30px;
-    background: #008CBA;
-    color: #C9F8FE;
+button {
+    background: #00D08E;
     border: none;
-    border-radius: 15px;
+    color: white;
+    padding: 9px 15px;
+    display: block;
+    margin: auto;
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main div {
+    flex-basis: 50%;
+}
+
+main div img {
+    width: 100%;
+}
+
+
+.right-top-inside {
+    width: 80%;
+    margin: auto;
+}
+
+.left-bottom > h2,
+.right-top-inside > h2 {
+    font-size: 20px;
+}
+
+.right-top-inside > p {
+    font-size: 16px;
+}
+
+.right-top-inside li {
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.right-top-inside li > i{
+    color: #00D08E;
+    margin-right: 10px;
+}
+
+.right-top ul{
+    padding-left: 0;
+}
+
+.left-bottom {
+    text-align: center;
+}
+
+.left-bottom ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left-bottom h2 {
+    text-align: center;
+
+}
+
+.left-bottom ul li{
+    flex-basis: 33%;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.left-top {
+    background: url("docs/tablet.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.right-bottom {
+    background: url("pen.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.left-bottom > ul > li > img {
+    width: 50%;
+}
+
+.left-bottom > ul > li > div{
+    color: #00D096;
+    font-weight: 800;
     font-size: 18px;
 }
 
-.info {
-    text-align: center;
-    background: #FFFFFF;
-}
-
-.headers {
-    width: 85%;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    margin: auto;
-}
-
-.info h2{
-    font-weight: 200;
-    margin-bottom: 20px;
-    font-size: 28px;
-    opacity: 0.8;
-}
-
-.info span {
-    border-bottom: 3px solid #34B1C4;
-}
-
-.headers p{
-    font-size: 14px;
-    line-height: 20px;
-    opacity: 0.8;
-    margin-bottom: 30px;
-}
-
-.headers button {
-    padding: 12px 26px;
-    border-radius: 30px;
-    border: none;
-    background: #454545;
-    color: #FDFEE3;
-    font-size: 14px;
-}
-
-.second-section {
-    padding: 30px 0;
-    text-align: center;
-    font-weight: 500;
-}
-
-.second-section span{
-    border-bottom: 2px solid #454545;
-}
-
-.services article {
-    padding-bottom: 20px;
-    background: #FFFFFF;
-    text-align: center;
-    color: rgba(0,0,0,0.8);
-}
-
-.services article img{
-    border-top-right-radius: 2px;
-    border-top-left-radius: 2px;
-}
-
-.services article h4{
-    margin-top: 15px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.services article p{
-    font-size: 12px;
-    margin: 0 4px;
-}
-
-.services article button{
-    margin-top: 16px;
-    padding: 6px 12px;
-    background: #454545;
-    color: #E6EEF5;
-    border-radius: 4px;
-    border: none;
-    font-size: 14px;
-}
-
-.subscription h2{
-    font-weight: 100;
-    padding-bottom: 15px;
-    font-size: 28px;
-}
-
-.subscription span {
-    border-bottom: 2px solid #FDFDFD;
-}
-
-.subscription div {
-    font-size: 14px;
-    padding-bottom: 20px;
-}
-
-.subscription input {
-    width: 40%;
-    padding: 7px 0;
-    font-size: 14px;
-    background: #545A5E;
-    border: none;
-    padding-left: 10px;
-    border-radius: 3px;
-}
-
-.subscription label {
-    background: #6BBFFF;
-    padding: 7px 14px 7px 16px;
-    border-radius: 3px;
-    font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-}
-
 footer {
-    background: #2F3539;
-    color: white;
+    background: #b2f1dd;
+    padding-top: 15px;
+    padding-bottom: 20px;
+   
 }
 
-footer ul{
-    list-style-type: none;
-    font-size: 14px;
+footer h2{
+    text-align: center;
+    margin-top: 0;
+    font-size: 20px;
 }
 
-footer a{
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
+footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    justify-content: space-around;
+    padding-left: 0;
 }
 
-.special {
-    padding: 10px 0;
-}
 
 footer ul li{
-    line-height: 22px;
+    flex-basis: 25%;
+    list-style-type: none;
+    margin: 10px 20px;
+    padding-left: 0;
+    
 }
 
-.end{
-    background: #262B2F;
+footer h3{
+    font-size: 14px;
     text-align: center;
-    color: white;
-    font-size: 10px;
-    padding: 5px 0;
+    margin-bottom: 4px;
+    font-weight: 900;
 }
 
-.last {
+footer p{
     font-size: 12px;
+    text-align: center;
+    margin: 0 8px;
 }
 
-.last-last {
-    padding-bottom: 16px;
-}
-
-i {
-    padding: 10px 5px 0 2px;
-}
-
-.end .span{
-    color: #008C9B;
-}
+footer > p > span {
+    color: black;
+    font-weight: 800;
+} 
