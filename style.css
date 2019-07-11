@@ -86,7 +86,7 @@ footer {
 }
 
 div.header {
-    background: url("../images/slide2.jpg") no-repeat center;
+    background: url("./images/slide2.jpg") no-repeat center;
     background-size: cover;
     width: 100%;
     padding-top: 0;
